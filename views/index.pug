@@ -7,6 +7,9 @@ block number-1
     if success 
         p.success Good job 
 
+    if delete1 
+        p.success Deleted 
+
     form.form(action='/add' method='POST')
         input.input(type='text' placeholder='Add your todo description here...' name='todo')
         button.btn Add
@@ -14,6 +17,11 @@ block number-1
     ul.todos
         if todos.length
             each todo in todos
-                li.todo #{ todo.description }
+                li.todo 
+                    if todo.done 
+                        a.done(href=`/${ todo.id }/update`) #{ todo.description }
+                    else
+                        a.undone(href=`/${ todo.id }/update`) #{ todo.description }
+                    a.delete1(href=`/${ todo.id }/delete1`) Delete
         else 
             p.todo No any todo available
