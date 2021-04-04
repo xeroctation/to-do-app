@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    font-family: 'Open Sans', sans-serif;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -27,6 +33,7 @@
     font-size: 1.5rem;
     width: 80%;
     border: 1px solid #ccc;
+    font-family: inherit;
 }
 
 .btn{
@@ -51,6 +58,29 @@
     border-bottom: 1px dotted #ccc;
 }
 
+.todo:last-child{
+    border-bottom: none;
+}
+
 .todo:hover{
     background-color: #eee;
+    border-color: #eee;
+}
+
+.error, .success{
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.error{
+    color: red;
+    border-color: red;
+}
+
+.success{
+    color: green;
+    border-color: green;
 }
