@@ -11,7 +11,7 @@ app.set('view engine', 'pug')
 app.use('/static', express.static('assets'))
 app.use(express.urlencoded({ extended: false }))
 
-// localhost:666 
+// localhost:8000 
 app.get('/',(req, res) => {
     fs.readFile('./data/todos.json', (err, data) => {
         if(err) throw err
