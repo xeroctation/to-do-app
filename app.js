@@ -5,7 +5,7 @@ const app = express()
 
 // node libs
 const fs = require('fs')
-const PORT = 666
+const PORT = 8000
 
 app.set('view engine', 'pug')
 app.use('/static', express.static('assets'))
