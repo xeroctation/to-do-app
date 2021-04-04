@@ -1,6 +1,19 @@
 extends layout.pug
 
-block content
-    div.container
-        h1 This app will allow user to manage their tasks and plans
-        a(href='/add') Add Task
+block number-1
+    if error 
+        p Please fill the input
+
+    if success 
+        p Good job 
+        
+    form.form(action='/add' method='POST')
+        input.input(type='text' placeholder='Add your todo description here...' name='todo')
+        button.btn Add
+
+    ul.todos
+        if todos.length
+            each todo in todos
+                li.todo #{ todo.description }
+        else 
+            p.todo No any todo available
