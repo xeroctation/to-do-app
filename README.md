@@ -1,11 +1,11 @@
-# TO DOO APPLICATION
+# TO DO APPLICATION
 
 This app allows users to track the dos.
 
 #### Instructions
 1.Download the source code
 ```bash
-git clone [url to the github repo]
+git clone https://github.com/xeroctation/to-do-app.git
 ```
 
 or just download the *.zip file
@@ -25,4 +25,4 @@ node app
 - pug
 
 #### Link to github repo
-[url to the github repo]
+https://github.com/xeroctation/to-do-app.git
