@@ -117,6 +117,8 @@
     margin-top: 25px;
     border: 1px solid #ccc;
     padding: 10px;
+    max-height: 68vh;
+    overflow-y: auto;
 }
 
 .todo{
