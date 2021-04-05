@@ -1,16 +1,16 @@
 # TO DO APPLICATION
 
-This app allows users to track the dos.
+This web application helps users to manage their tasks and plans.
 
 #### Instructions
-1.Download the source code
+1.Clone or Download the source code
 ```bash
 git clone https://github.com/xeroctation/to-do-app.git
 ```
 
-or just download the *.zip file
+or you can just download the to-do-app-master.zip file
 
-2.Install description
+2.Install npm
 ```bash
 npm install
 ```
@@ -20,11 +20,11 @@ npm install
 node app
 ```
 
-#### Deps list
+#### dependencies list
 - express
 - pug
 
-#### Link to github repo
+#### Link to GitHub repository
 https://github.com/xeroctation/to-do-app.git
 
 #### Link to Application on Glitch 

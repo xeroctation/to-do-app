@@ -1,14 +1,15 @@
 extends layout.pug
 
 block number-1
-    if error 
-        p.error Please fill the input
+    div.flex
+        if error 
+            p.error Input is Empty, fill it!
 
-    if success 
-        p.success Good job 
+        if success 
+            p.success Gotcha! 
 
-    if delete1 
-        p.success Deleted 
+        if delete1 
+            p.delete1 Successfully deleted! 
 
     form.form(action='/add' method='POST')
         input.input(type='text' placeholder='Add your todo description here...' name='todo')
@@ -22,6 +23,6 @@ block number-1
                         a.done(href=`/${ todo.id }/update`) #{ todo.description }
                     else
                         a.undone(href=`/${ todo.id }/update`) #{ todo.description }
-                    a.delete1(href=`/${ todo.id }/delete1`) Delete
+                    a.delete(href=`/${ todo.id }/delete1`) Delete
         else 
             p.todo No any todo available
